@@ -1,7 +1,7 @@
 "use client"
 import { Jaro } from "next/font/google";
 import { useRef, useState } from "react";
-import { FaArrowAltCircleDown, FaArrowAltCircleLeft, FaArrowAltCircleRight, FaArrowAltCircleUp, FaCss3Alt, FaHtml5, FaLinkedin } from "react-icons/fa";
+import { FaArrowAltCircleDown, FaArrowAltCircleLeft, FaArrowAltCircleRight, FaArrowAltCircleUp, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import {motion, useInView } from "motion/react";
 import { FaReact } from "react-icons/fa";
