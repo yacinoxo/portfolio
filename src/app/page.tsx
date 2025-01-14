@@ -111,8 +111,7 @@ export default function Home() {
     redirect("https://" + link)
   }
 
-  // eslint-disable-next-line no-use-before-define
-  let filtredProject = Projects.filter(miniproject => miniproject.key == project)
+  let filtredProject = Projects.filter(miniproject => miniproject.key == project) // eslint-disable-line
 
   return (
     <div className="bg-[#2A004E] !w-screen min-h-screen !h-fit p-10 max-sm:p-4 pb-0 overflow-y-auto !overflow-x-hidden scroll-smooth !no-scrollbar">
