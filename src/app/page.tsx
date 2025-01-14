@@ -24,7 +24,7 @@ export default function Home() {
       </div>
       
       <div className="flex justify-center mb-20">
-      <main className="flex w-full relative max-sm:p-4 !max-w-6xl h-fit py-8 flex-col !justify-between !items-center gap-4 main">
+        <main className="flex w-full relative max-sm:p-4 !max-w-6xl h-fit py-8 flex-col !justify-between !items-center !gap-4 main">
           <Projects/>
           <Skills/>
         </main>
