@@ -111,6 +111,7 @@ export default function Home() {
     redirect("https://" + link)
   }
 
+  // eslint-disable-next-line no-use-before-define
   let filtredProject = Projects.filter(miniproject => miniproject.key == project)
 
   return (
