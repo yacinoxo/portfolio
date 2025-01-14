@@ -5,6 +5,7 @@ import {motion } from "motion/react";
 
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import Image from "next/image";
 
 const jaro = Jaro({ subsets : ['latin']})
 
@@ -19,7 +20,7 @@ export default function Home() {
             <p className="text-[14px] max-sm:text-[14px] text-white">I am a passionate web developer with a talent for transforming creative ideas into functional and engaging digital solutions. With a focus on innovation and precision, I thrive on bringing concepts to life, crafting unique projects that leave a lasting impression.</p>
             <button className={`${jaro.className} text-[20px] text-white bg-[#B406DB] hover:bg-[#e119da] rounded px-4 py-1 my-4`}><a href="mailto:y0933335@gmail.com?subject=Hello" target="_blank">Get In Touch</a></button>
           </div>
-          <div className="w-72 h-72"><img src="https://musaabk.vercel.app/assets/svg/avatar.svg" alt="f" className="w-full h-full"/></div>
+          <div className="w-72 h-72"><Image src="/assets/svg/avatar.svg" width="252" height="267" alt="avatar" className="w-full h-full"/></div>
         </motion.header>
       </div>
       
