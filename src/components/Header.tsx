@@ -1,22 +1,16 @@
 'use client';
 
-import { Jaro, Lalezar } from 'next/font/google';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 
-const jaro = Jaro({ subsets : ['latin']})
-const lalezar = Lalezar({
-  subsets : ["latin"],
-  weight : "400"
-})
 
 export default function Header() {
 
   const pathname = usePathname()
 
-  const [currentLang, setCurrentLang] = useState(pathname);
+  const [currentLang, setCurrentLang] = useState(pathname === "/" ? "en" : "ar");
   
     const toggleLanguage = () => {
       const newLang = currentLang === 'en' ? 'ar' : 'en';
