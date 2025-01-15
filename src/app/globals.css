@@ -68,7 +68,7 @@
 
 @media (min-width: 1110px) {
     .main {
-        flex-direction: row !important;
+        flex-direction: row-reverse !important;
     };
     #projects {
         margin: 0 !important;
