@@ -1,5 +1,5 @@
 "use client"
-import { Jaro, Lalezar } from "next/font/google";
+import { Jaro } from "next/font/google";
 import { MdEmail } from "react-icons/md";
 import {motion } from "motion/react";
 
