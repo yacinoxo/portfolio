@@ -1,5 +1,5 @@
 "use client"
-import { Jaro } from "next/font/google";
+import { Jaro, Lalezar } from "next/font/google";
 import { MdEmail } from "react-icons/md";
 import {motion, useInView } from "motion/react";
 import { redirect } from 'next/navigation'
@@ -23,6 +23,10 @@ import { SiExpress, SiFlask } from "react-icons/si";
 import { TbBrandFramerMotion, TbBrandNodejs } from "react-icons/tb";
 
 const jaro = Jaro({ subsets : ['latin']})
+const lalezar = Lalezar({
+  subsets: ['arabic'],
+  weight: "400"
+})
 
 export default function Home() {
 
@@ -55,7 +59,7 @@ export default function Home() {
       },
       {
           "src": "https://i.ibb.co/56W2NyF/old-Portfolio.png",
-          "title": "موقعي الشخصي القديم",
+          "title": "موقعي القديم",
           "description": "هذا موقعي الشخصي، الذي تم بناؤه باستخدام Next.js وTailwind CSS وFramer Motion، يبرز مهاراتي المبكرة في تطوير الويب. صُمم خصيصًا للشاشات الكبيرة مثل الأجهزة اللوحية وأجهزة الكمبيوتر، وهو يعرض أساسيات تصميم تطبيقات ويب جذابة بصريًا مع التركيز على الرسوم المتحركة السلسة والتصميم النظيف.",
           "key": 3,
           "link": "yacinoc-portfolio.vercel.app"
@@ -124,9 +128,9 @@ export default function Home() {
           <div className="flex justify-center mb-20">
             <motion.header initial={{opacity: 0, bottom: 200}} animate={{top: 0,opacity: 100, transition:{duration: 1.5}}} className="bg-[#2E2E50] relative w-full max-w-6xl h-fit p-8 max-sm:px-4 max-sm:pb-4 max-sm:pt-10 rounded flex max-md:flex-wrap-reverse max-md:!justify-center max-md:gap-8 !justify-between !items-center" dir="rtl">
               <div className="!w-full h-fit max-sm:p-4 p-6 rounded bg-[#1C1C2E] max-w-2xl">
-                <p className="text-white text-[40px] font-[Jaro] max-sm:text-[24px]">ياسين الكمالي</p>
-                <p className="text-[14px] max-sm:text-[14px] text-white">أنا مطوّر ويب شغوف أتمتع بموهبة تحويل الأفكار الإبداعية إلى حلول رقمية عملية وجذابة. أركز على الابتكار والدقة، وأجد متعتي في تحويل المفاهيم إلى واقع ملموس من خلال تصميم مشاريع فريدة تترك انطباعًا دائمًا.</p>
-                <button className={`${jaro.className} text-[20px] text-white bg-[#B406DB] hover:bg-[#e119da] rounded px-4 py-1 my-4`}><a href="mailto:y0933335@gmail.com?subject=Hello" target="_blank">للتواصل</a></button>
+                <p className="text-white text-[40px] font-[lalezar] max-sm:text-[24px]">ياسين الكمالي</p>
+                <p className="text-[18px] max-sm:text-[15px] text-white font-[lalezar] font-[0]">أنا مطوّر ويب شغوف أتمتع بموهبة تحويل الأفكار الإبداعية إلى حلول رقمية عملية وجذابة. أركز على الابتكار والدقة، وأجد متعتي في تحويل المفاهيم إلى واقع ملموس من خلال تصميم مشاريع فريدة تترك انطباعًا دائمًا.</p>
+                <button className={`${lalezar.className} text-[20px] text-white bg-[#B406DB] hover:bg-[#e119da] rounded px-4 py-1 my-4`}><a href="mailto:y0933335@gmail.com?subject=Hello" target="_blank">للتواصل</a></button>
             </div>
               <div className="w-72 h-72"><Image src="/assets/svg/avatar.svg" width="252" height="267" alt="avatar" className="w-full h-full"/></div>
             </motion.header>
@@ -135,7 +139,7 @@ export default function Home() {
         <div className="flex justify-center mb-20">
           <main className="flex w-full relative max-sm:p-4 !max-w-6xl h-fit py-8 flex-col !justify-between !items-center !gap-4 main">
             <motion.div initial={{top:100, opacity:0}} animate={isInViewProject ? {opacity: 100 ,top: 0,transition: {duration: 1.5}} : {}} id="projects" className="w-fit !scale-[.65] overflow-hidden relative h-fit max-w-2xl rounded bg-[#2E2E50] p-6">
-              <p className={`text-white text-7xl mb-8`} ref={ProjectRef} dir="rtl">المشاريع</p>
+              <p className={`text-white text-7xl mb-8 font-[lalezar]`} ref={ProjectRef} dir="rtl">المشاريع</p>
               <div className="w-[470px] overflow-x-hidden">
                 <motion.div animate={{ x: currentPosition, transition: { duration: 0.5 } }} className="flex scroll-smooth gap-x-6 relative no-scrollbar" ref={sliderRef}>
                   {Projects.map((project) => (
@@ -151,9 +155,9 @@ export default function Home() {
                 {filtredProject.map((project, i) => (
                   <div key={i}>
                     <motion.div animate={{y: currentDesPosition, transition: {duration: 1}}} className="w-full h-full bg-[#1C1C2E] p-6 absolute top-full left-0" ref={projectDes}>
-                      <p className={`${jaro.className} text-white text-7xl mb-8`} dir="rtl">{project.title}</p>
+                      <p className={`${lalezar.className} text-white text-7xl mb-8`} dir="rtl">{project.title}</p>
                       <div className="bg-[#3E3E6B] w-[470px] h-[239.25px] mb-10 p-6 overflow-scroll">
-                        <p className="text-white text-md font-mono" dir="rtl">{project.description}</p>
+                        <p className={`${lalezar.className} !font-[0] text-white text-xl font-mono`} dir="rtl">{project.description}</p>
                       </div>
                       <div className="flex justify-between">
                         <FaArrowAltCircleDown size={40} onClick={()=> CloseProjectDescription()} color="#B406DB" className="cursor-pointer"/>
@@ -174,7 +178,7 @@ export default function Home() {
                 </div>
             </motion.div>
             <motion.div initial={{top:100, opacity:0}} animate={isInViewSkill ? {opacity: 100 ,top: 0,transition: {duration: 1.5}} : {}} id="projects" className="w-fit max-sm:max-w-6xl !scale-[.65] max-w-2xl overflow-hidden relative rounded bg-[#2E2E50] !p-6">
-              <p className={`text-white text-7xl mb-8`} ref={skillsRef} dir="rtl">المهارات</p>
+              <p className={`text-white text-7xl mb-8 font-[lalezar]`} ref={skillsRef} dir="rtl">المهارات</p>
               <div className="w-[470px] h-fit flex !justify-between !col-span-2 mb-8">
                 <TooltipProvider>
                   <Tooltip>
@@ -307,12 +311,12 @@ export default function Home() {
         <div className="flex justify-center">
             <footer className="bg-[#0D0D0D] w-full !max-w-6xl flex items-center justify-between h-fit p-6 rounded" dir="rtl">
             <div>
-                <p className="text-2xl sm:text-5xl text-white font-[Jaro] mb-4">اتصل بنا</p>
+                <p className="text-2xl sm:text-5xl text-white font-[lalezar] mb-4">اتصل بنا</p>
                 <div className="flex gap-4">
                     <a href="mailto:y0933335@gmail.com?subject=Hello" target="_blank"><MdEmail color="white" className="cursor-pointer sm:size-8"/></a>
                 </div>
             </div>
-            <p className="text-white text-sm lg:text-3xl sm:text-xl md:text-2xl" dir="ltr">{"©2025 ياسين. جميع الحقوق محفوظة"}</p>
+            <p className="text-white text-sm lg:text-3xl sm:text-xl md:text-2xl font-[lalezar]" dir="ltr">{"© جميع الحقوق محفوظة 2025 لياسين "}</p>
             </footer>
         </div>
         </div>
