@@ -9,10 +9,6 @@ import Image from "next/image";
 
 
 const jaro = Jaro({ subsets : ['latin']})
-const lalezar = Lalezar({
-  subsets : ["latin"],
-  weight : "400"
-})
 
 export default function Home() {
 
