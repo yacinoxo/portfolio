@@ -1,5 +1,5 @@
 "use client"
-import { Jaro, Lalezar } from "next/font/google";
+import { Lalezar } from "next/font/google";
 import { MdEmail } from "react-icons/md";
 import {motion, useInView } from "motion/react";
 import { redirect } from 'next/navigation'
@@ -22,7 +22,6 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { SiExpress, SiFlask } from "react-icons/si";
 import { TbBrandFramerMotion, TbBrandNodejs } from "react-icons/tb";
 
-const jaro = Jaro({ subsets : ['latin']})
 const lalezar = Lalezar({
   subsets: ['arabic'],
   weight: "400"

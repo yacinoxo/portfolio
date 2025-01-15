@@ -119,7 +119,7 @@ function Projects() {
                     <motion.div animate={{y: currentDesPosition, transition: {duration: 1}}} className="w-full h-full bg-[#1C1C2E] p-6 absolute top-full left-0" ref={projectDes}>
                       <p className={`${jaro.className} text-white text-7xl mb-8`}>{project.title}</p>
                       <div className="bg-[#3E3E6B] w-[470px] h-[239.25px] mb-10 p-6 overflow-scroll">
-                        <p className="text-white text-md font-mono">{project.description}</p>
+                        <p className="text-white text-md font-[600]">{project.description}</p>
                       </div>
                       <div className="flex justify-between">
                         <FaArrowAltCircleDown size={40} onClick={()=> CloseProjectDescription()} color="#B406DB" className="cursor-pointer"/>
