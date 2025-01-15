@@ -6,7 +6,6 @@ import { redirect } from 'next/navigation'
 import React, { useRef, useState } from 'react'
 import { FaArrowAltCircleDown, FaArrowAltCircleUp, FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa'
 import { RiExternalLinkFill } from 'react-icons/ri'
-import Skills from "@/components/Skills";
 import Image from "next/image";
 import { FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
