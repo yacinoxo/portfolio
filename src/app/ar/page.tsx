@@ -39,38 +39,43 @@ export default function Home() {
 
 
     const Projects = [
-            {
-              "src" : "https://i.ibb.co/6JnJx0Z/replit.png",
-              "title" : "Landing page",
-              "description" : "I created a fully responsive landing page as my first step into web development. It features a clean, adaptable design for mobile, tablet, and desktop screens, emphasizing user experience and structured code. This project reflects my early enthusiasm for crafting user-friendly websites and mastering fundamental web technologies.",
-              "key" : 1,
-              "link" : "developers.tiiny.site/"
-            },{
-              "src" : "https://i.ibb.co/ZMFsJBy/weka.png",
-              "title" : "Weka Chats",
-              "description" : "Weka Chats is a web application inspired by Messenger, allowing users to connect effortlessly. Simply use usernames to send messages to friends or join the Global Chats to share messages visible to all users. It combines simplicity and connectivity in one platform, perfect for seamless communication.",
-              "key" : 2,
-              "link": "weka-chat.vercel.app/"
-            },{
-              "src" : "https://i.ibb.co/56W2NyF/old-Portfolio.png",
-              "title" : "Old Portfolio",
-              "description" : "This portfolio, built with Next.js, Tailwind CSS, and Framer Motion, highlights my early skills in web development. Designed specifically for larger screens like tablets and desktops, it showcases my foundation in creating visually engaging web applications, with a focus on smooth animations and clean design.",
-              "key" : 3,
-              "link" : "yacinoc-portfolio.vercel.app",
-          },{
-            "src" : "https://i.ibb.co/n801g2d/Blogwide.png",
-            "title" : "BlogWide",
-            "description" : "Blog Wide is a responsive blog platform designed to deliver visually appealing and well-structured content. Built with a focus on SEO optimization, it features three content categories and highlights my ability to create large-scale web applications with an emphasis on great design and functionality. This project reflects my expertise in combining user-friendly layouts with performance-driven development.",
-            "key" : 4,
-            "link" : "Blogwide.vercel.app"
-          },{
-            "src" : "https://i.ibb.co/JvzNqNm/notion.png",
-            "title" : "Notion Clone",
-            "description" : "Notion Clone is a web application that allows users to create and share documents with an intuitive and user-friendly interface. It offers features like adding images, customizing colors, resizing elements, and more. Security is a top priority—only you can invite collaborators or delete your documents, and no one can access them without your permission. This project demonstrates my skills in building feature-rich, secure, and user-focused applications.",
-            "key" : 5,
-            "link": "yacinoc-notion.vercel.app"
-          }
-        ]
+      {
+          "src": "https://i.ibb.co/6JnJx0Z/replit.png",
+          "title": "صفحة هبوط",
+          "description": "قمت بإنشاء صفحة هبوط متجاوبة بالكامل كخطوتي الأولى في تطوير الويب. تتميز بتصميم نظيف وقابل للتكيف مع شاشات الهواتف المحمولة والأجهزة اللوحية وأجهزة الكمبيوتر، مع التركيز على تجربة المستخدم والرمز المنظم. يعكس هذا المشروع حماسي المبكر لإنشاء مواقع إلكترونية سهلة الاستخدام وإتقان تقنيات الويب الأساسية.",
+          "key": 1,
+          "link": "developers.tiiny.site/"
+      },
+      {
+          "src": "https://i.ibb.co/ZMFsJBy/weka.png",
+          "title": "Weka Chats",
+          "description": "Weka Chats هو تطبيق ويب مستوحى من Messenger يتيح للمستخدمين التواصل بسهولة. يمكن ببساطة استخدام أسماء المستخدمين لإرسال الرسائل إلى الأصدقاء أو الانضمام إلى الدردشات العامة لمشاركة الرسائل التي يمكن للجميع رؤيتها. يجمع هذا التطبيق بين البساطة والاتصال في منصة واحدة مثالية للتواصل السلس.",
+          "key": 2,
+          "link": "weka-chat.vercel.app/"
+      },
+      {
+          "src": "https://i.ibb.co/56W2NyF/old-Portfolio.png",
+          "title": "موقعي الشخصي القديم",
+          "description": "هذا موقعي الشخصي، الذي تم بناؤه باستخدام Next.js وTailwind CSS وFramer Motion، يبرز مهاراتي المبكرة في تطوير الويب. صُمم خصيصًا للشاشات الكبيرة مثل الأجهزة اللوحية وأجهزة الكمبيوتر، وهو يعرض أساسيات تصميم تطبيقات ويب جذابة بصريًا مع التركيز على الرسوم المتحركة السلسة والتصميم النظيف.",
+          "key": 3,
+          "link": "yacinoc-portfolio.vercel.app"
+      },
+      {
+          "src": "https://i.ibb.co/n801g2d/Blogwide.png",
+          "title": "Blog Wide",
+          "description": "Blog Wide هو منصة مدونات متجاوبة تهدف إلى تقديم محتوى جذاب ومنظم بشكل جيد. بُني مع التركيز على تحسين محركات البحث (SEO)، ويتميز بثلاث فئات محتوى ويبرز قدرتي على إنشاء تطبيقات ويب كبيرة الحجم مع التركيز على التصميم والوظائف الممتازة. يعكس هذا المشروع خبرتي في الجمع بين التصاميم سهلة الاستخدام والتطوير الموجه نحو الأداء.",
+          "key": 4,
+          "link": "Blogwide.vercel.app"
+      },
+      {
+          "src": "https://i.ibb.co/JvzNqNm/notion.png",
+          "title": "Notion Clone",
+          "description": "Notion Clone هو تطبيق ويب يتيح للمستخدمين إنشاء المستندات ومشاركتها بواجهة بديهية وسهلة الاستخدام. يقدم ميزات مثل إضافة الصور وتخصيص الألوان وتغيير حجم العناصر والمزيد. تُعد الأمان أولوية قصوى—فقط يمكنك دعوة المتعاونين أو حذف مستنداتك، ولا يمكن لأي شخص الوصول إليها دون إذنك. يبرز هذا المشروع مهاراتي في بناء تطبيقات غنية بالميزات وآمنة وموجهة للمستخدم.",
+          "key": 5,
+          "link": "yacinoc-notion.vercel.app"
+      }
+  ];
+  
         
         
         const imageW = ImageRef.current?.width
@@ -307,7 +312,7 @@ export default function Home() {
                     <a href="mailto:y0933335@gmail.com?subject=Hello" target="_blank"><MdEmail color="white" className="cursor-pointer sm:size-8"/></a>
                 </div>
             </div>
-            <p className="text-white text-sm lg:text-3xl sm:text-xl md:text-2xl" dir="ltr">{"ياسين جميع الحقوق محفوظة "}</p>
+            <p className="text-white text-sm lg:text-3xl sm:text-xl md:text-2xl" dir="ltr">{"©2025 ياسين. جميع الحقوق محفوظة"}</p>
             </footer>
         </div>
         </div>
